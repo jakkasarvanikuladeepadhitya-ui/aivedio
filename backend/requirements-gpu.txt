@@ -1,0 +1,12 @@
+# Only for VIDEO_PROVIDER=local / images (your own NVIDIA GPU). Not installed in the Docker/Render image.
+Pillow>=10.0
+numpy>=1.26
+# Local AI video (VIDEO_PROVIDER=local). Install PyTorch FIRST with CUDA, see scripts/setup_wsl.sh:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+diffusers>=0.33.0
+transformers>=4.46
+accelerate>=1.0
+sentencepiece
+ftfy
+protobuf
+bitsandbytes
